@@ -115,6 +115,13 @@ namespace code.Controllers
             var p = new PageMetaDetails(a);
             return View(p);
         }
+        public ActionResult machinelearningproject()
+        {
+            ViewBag.Message = "Your contact page.";
+            var a = Request.RawUrl;
+            var p = new PageMetaDetails(a);
+            return View(p);
+        }
         public ActionResult error()
         {
             ViewBag.Message = "Your contact page.";
