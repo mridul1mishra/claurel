@@ -1,0 +1,114 @@
+﻿@{
+    ViewData["Title"] = "Demand Generation";
+}
+
+<section class="about-banner">
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Lead Management
+                </h1>
+                <p class="text-white link-nav"><a href="index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="demandgeneration"> Demand Generation</a><span class="lnr lnr-arrow-right"></span>  <a href="#">Lead Management</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="post-content-area single-post-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post row">
+                    <div class="col-lg-12">
+                        <div class="feature-img">
+                            <img class="img-fluid" src="img/blog/feature-img1.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="mt-20 mb-20">Lead Generation</h3>
+                        <p class="excert">
+                            The companies drive more demand, accelerate leads in the sales cycle, and convert more opportunities to revenue with a proven global
+                            support model that's both effective and affordable. Create measurable breakpoint which help execute, refine, and measure the success of your campaigns
+                            through initial ‘hand raise’ through the lead lifecycle. It can be achieved by:
+                        </p>
+                        <p>
+                            Managing Campaign Definition and Execution Process:
+                            One should design ecosystem to manage campaigns from design through delivery by leveraging a proven campaign framework.
+                        </p>
+                        <p>
+                            Providing Relevant and Timely Content:
+                            Brands now map content to key milestones in the buying process, specific contact personas, or specific sales objectives.
+                        </p>
+                        <p>
+                            Aligning Sales and Marketing:
+                            Brands define and adhere to campaign execution timeframes, agree on lead quality, and develop sales enablement tools.
+                        </p>
+                        <p>
+                            Measuring Results and Constantly Improving:
+                            Define your reporting requirements, analyze campaign results, and provide recommendations on improvement.
+                        </p>
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="quotes">
+                            Any successful enterprise should start with a foundation of great customer
+                            relationships, with you, the seller, connecting with people who need your
+                            product or service. As your company expands, these connections become
+                            more sophisticated. It’s not just a transaction between the buyer and seller.
+                            You also need to share information across the various teams within your
+                            own organization that are making contact with the same customers. A Lead Management
+                            system can serve as a vital nerve center to manage the many connections
+                            needed in a growing business. In a world where the most successful
+                            companies are customer focused, Channelising your effort make the customer king.
+                        </div>
+                        <div class="row mt-30 mb-30">
+                            <div class="col-12">
+                                <img class="img-fluid" src="img/Understanding-Lead-Management-Lead-Nurturing.png" alt="">
+                                <p>Image: Hubspot</p>
+                            </div>
+
+                            <div class="col-lg-12 mt-30">
+                                <p>
+                                    Lead data is valuable when used to qualify leads for the sales department and to show which marketing campaigns lead to closed sales. But these insights can be missed if sales and marketing don’t work together. Before you do anything else, get both departments in a room to map out common goals, and to discuss how to use the data.
+                                </p>
+                                <p>
+                                    Lead Management is an excellent tool to connect with customers and build relationships that grow
+                                    over time. But don’t just assume that everything is fine and well. Be aware that customers evolve
+                                    and change, and your business may need to change with them.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-form">
+                    <h4>Leave a Comment</h4>
+                    <form>
+                        <div class="form-group form-inline">
+                            <div class="form-group col-lg-6 col-md-12 name">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12 email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                        </div>
+                        <a href="#" class="primary-btn text-uppercase">Post Comment</a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 sidebar-widgets">
+                <div class="widget-wrap">
+                    @Html.Partial("~/views/shared/_TopPosts.cshtml")
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

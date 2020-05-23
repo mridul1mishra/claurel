@@ -1,0 +1,107 @@
+﻿@{
+    ViewData["Title"] = "Customer Journey";
+}
+
+<section class="about-banner">
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Customer Profiling
+                </h1>
+                <p class="text-white link-nav"><a href="index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="#"> Customer Profiling</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="post-content-area single-post-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post row">
+                    <div class="col-lg-12">
+
+                        <div class="feature-img">
+                            <img class="img-fluid" src="img/blog/progressive-profiling.jpg" alt="Progressive Profiling">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="mt-20 mb-20">Progressive Profiling to build better Customer Experience</h3>
+                        <p class="excert">
+                        <p>
+                            Sales teams, marketers, and customer service representatives want accurate, useful customer data. That could be as simple as making sure an updated email address is on file or as specific as knowing about a customer’s most recent shoe purchase on your company’s website. With that data, salespeople can personalize offers, marketers can create specific customer journeys, and customer service representatives can solve problems quickly and efficiently
+                        </p>
+                        <p>
+                            Gathering customer data is more difficult than it may seem,
+                            especially when we want it fast. Heck, we want the data right now, don’t we?<br /><br />
+                            Using progressive profiling is one way to collect data about your current customers or new leads.
+                            The main goal of progressive profiling is to add information to customer profiles over time — without
+                            overwhelming them and turning them away. In B2B lead generation campaigns, this usually means using
+                            forms on your landing pages. Activating conditionals can display only the form fields specific
+                            prospects haven’t filled out in the past. A broader view of progressive profiling can simply mean
+                            paying attention to user behavior in emails, polling your customers (more on this later) and using
+                            live content.
+                        </p>
+                        <p>
+                            However you slice it, the important takeaway is that progressive profiling is not an immediate solution.
+                            It’s something that you should implement over time (and in unique ways) while being keenly aware of user experience.
+                            It’s like dating. We find out the basics on our first few dates, maybe even playing it safe;
+                            later, more intimate questions and answers may make the relationship stronger and more personal.
+                        </p>
+
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="quotes">
+                            Here are a few ways to use progressive profiling to create smooth customer experiences:
+                            <ul class="col-lg-12" style="list-style-type: decimal; padding-left: 30px">
+                                <li style="padding-left: 15px">
+                                    Start broad: The details matter, But drilling into specifics too soon might turn people away.
+                                    Start by gathering general demographic information and maybe a fun tidbit.
+                                </li>
+                                <li style="padding-left: 15px">
+                                    Shorten those forms: Having too many fields can dissuade users from filling out forms. Create two-step or multi-step forms
+                                </li>
+                                <li style="padding-left: 15px">
+                                    Pick the right time: Use behavioral data and create a series of email and trigger right message at right time to right person.
+                                </li>
+                                <li style="padding-left: 15px">
+                                    Know which data you really need: It’s a must to know which data will help you meet not only your sales and marketing goals but also your customer’s goals. Best thing you can do is have a clear marketing or sales strategy in place before you begin asking for customer data.
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="comment-form">
+                    <h4>Leave a Comment</h4>
+                    <form>
+                        <div class="form-group form-inline">
+                            <div class="form-group col-lg-6 col-md-12 name">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12 email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                        </div>
+                        <a href="#" class="primary-btn text-uppercase">Post Comment</a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 sidebar-widgets">
+                <div class="widget-wrap">
+                    <partial name="_TopPosts" />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

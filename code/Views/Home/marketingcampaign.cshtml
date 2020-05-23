@@ -1,0 +1,111 @@
+﻿@{
+    ViewData["Title"] = "Campaign Management";
+}
+
+<section class="about-banner">
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    Marketing Campaign
+                </h1>
+                <p class="text-white link-nav"><a href="index">Home </a>  <span class="lnr lnr-arrow-right"></span>  <a href="demandgeneration">Demand Generation</a><span class="lnr lnr-arrow-right"></span>  <a href="#">Campaign Management</a></p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="post-content-area single-post-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post row">
+                    <div class="col-lg-12">
+                        <div class="feature-img">
+                            <img class="img-fluid" src="img/Campaign_Management.jpg" alt="">
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <h3 class="mt-20 mb-20">Campaign Management</h3>
+                        <p class="excert">
+                            Any large problem being tackled today has an emphasis on testing and experimentation.
+                            For everything from space exploration to finding cures for diseases,
+                            the solution to any large problem has scientific experimentation in its roots;
+                            the approach to marketing planning, execution and analysis should be no different.
+                        </p>
+                        <p>
+                            For modern marketers, trying to get a regular, quality message out to an audience is a complex problem.
+                            A positive intent to educate and promote can be misunderstood or lost in the fray.
+                            Effective campaigns here and there are achievable but a constant string of ‘wins’ on many different media is often more luck than preparation.
+                            There are too many factors to consider and not enough time to dissect and action all the data.
+                            Making the right decision for countless segments is no simple feat.
+                            This is an especially difficult task for ‘lone’ marketers assigned to different regions, products or channels.
+                        </p>
+                        <p>
+                            Given this environment, it is necessary for marketing departments to find a new way of organizing their efforts.
+                            Minimizing failure and mistakes is critical in permanent media (print, television, events, etc) as large audience sizes and
+                            static messaging allow little room for testing or experimentation. Focus groups and market analysis can help,
+                            but are generally reserved for larger brands with the budget to allocate on expensive accoutrements.
+                            However, a growing amount of marketing is taking place on dynamic media with an ability to innovate to smaller, targeted segments.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-12">
+                        <div class="quotes">
+                            The company’s success lies in generating high-repeat and referral business
+                            and providing an excellent purchasing experience to customers.
+                            Recently, however, repeat and referral business has slipped and there has been little marketing effort made to capture and
+                            amplify the message of the vast majority of happy customers
+                        </div>
+                        <div class="row mt-30 mb-30">
+                            <div class="col-12">
+                                <img class="img-fluid" src="img/campaign-management.png" alt="">
+                                <p>Image: Oracle Marketing Cloud</p>
+                            </div>
+
+                            <div class="col-lg-12 mt-30">
+                                <p>
+                                    The digital ecosystem design and integration was a major component that was developed and resulted system is created to provide
+                                    <ul class="col-lg-12" style="list-style-type: disc; padding-left: 30px">
+                                        <li>
+                                            Provided a single, integrated view of the national consumer base over the complete customer lifecycle—from initial
+                                            interest through to purchase and post-purchase.
+                                        </li>
+                                        <li>Enabled the automation of powerful, targeted marketing communications that are relevant to each stage of the customer journey.</li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-form">
+                    <h4>Leave a Comment</h4>
+                    <form>
+                        <div class="form-group form-inline">
+                            <div class="form-group col-lg-6 col-md-12 name">
+                                <input type="text" class="form-control" id="name" placeholder="Enter Name" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Name'">
+                            </div>
+                            <div class="form-group col-lg-6 col-md-12 email">
+                                <input type="email" class="form-control" id="email" placeholder="Enter email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter email address'">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="subject" placeholder="Subject" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Subject'">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control mb-10" rows="5" name="message" placeholder="Messege" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Messege'" required=""></textarea>
+                        </div>
+                        <a href="#" class="primary-btn text-uppercase">Post Comment</a>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 sidebar-widgets">
+                <div class="widget-wrap">
+                    @Html.Partial("~/views/shared/_TopPosts.cshtml")
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

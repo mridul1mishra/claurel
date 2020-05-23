@@ -1,0 +1,119 @@
+﻿@{
+    ViewData["Title"] = "Breaking Silos";
+}
+
+<section class="about-banner">
+    <div class="container">
+        <div class="row d-flex align-items-center justify-content-center">
+            <div class="about-content col-lg-12">
+                <h1 class="text-white">
+                    How to test scale out rules and notifications in Azure Web Apps
+                </h1>
+                
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="post-content-area single-post-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 posts-list">
+                <div class="single-post row">
+                    <div class="col-lg-12">
+
+                        <div class="feature-img">
+
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 col-md-12">
+                        <h3>Auto Scaling in Azure Web App</h3>
+                        <p class="excert">
+                            Web Sites can auto-scale either on a schedule or based on load. Below are the steps to configure auto-scale in Azure web app.
+                        <p>
+                            <h6>Create a simple Web Api Application</h6>
+                            To create a new MVC.NET web api application, open visual studio, simply click on New Project, select ASP.NET Web Application(.Net Framework), specify a name and from the next popup window select Web Api application, and then press OK.
+                        </p>
+                        <div class="feature-img">
+                            <a href="https://gallery.azure.ai/industries/healthcare"><img class="img-fluid" src="img/scaleout/scaleout1.PNG" alt="azure machine learning"></a>
+                        </div>
+                        <p>
+                            <h6>Simulate CPU-Load</h6>
+                            To simulate CPU-load in your web app you need to create a simple API controller, with a get request cpu-load that takes into account two parameters:
+                            <ol class="col-lg-12" style="list-style-type: disc; padding-left: 30px">
+                                <li>
+                                    how many seconds should the CPU-load last, and
+                                </li>
+                                <li>which percentage should the CPU-load reach</li>
+                            </ol>
+                            <div class="feature-img">
+                                <a href="https://gallery.azure.ai/industries/healthcare"><img class="img-fluid" src="img/scaleout/scaleout2.PNG" alt="azure machine learning"></a>
+                            </div>
+
+                        </p>
+                        <p>For our demo I want to perform a simple scaling test, which can help us build some dummy CPU-load pretty easily.</p>
+                        <p>
+                            <h6>Deploy to Azure</h6>
+                            App Service Plan pricing tier, S1 (Standard) is the cheapest one that allows you to have the auto-scale feature, up to 10 instances, automatically.
+                            To deploy to Azure, go to Visual Studio, right-click on the web project and select Publish and then follow the wizard steps as shown in the pictures below.
+                            <div class="feature-img">
+                                <img class="img-fluid" src="img/scaleout/scaleout3.JPG" alt="azure machine learning">
+                            </div>
+                        </p>
+                        <p>
+                            If your app gets published successfully, you will have a web application hosted on Azure, with two GET REST apis:
+
+                            api/values which returns an model of values
+                        </p>
+                        <p>
+                            <h6>Create rules and alerts for CPU-Load</h6>
+                            In Azure web apps, setting a rule to autoscale your app in multiple instances is as easy as moving a slider.
+                            For argument’s sake, in Azure portal, head over to your web app on which code was deployed, and from the left sidebar click on Scale out (App Service Plan) option.
+
+                            In the next blade there are two options:
+                            <ul class="col-lg-12" style="list-style-type: disc; padding-left: 30px">
+                                <li>the method you want to scale by,</li>
+                                <li>and the number of instances you want your app to be scaled out</li>
+                            </ul>
+                            When you choose Scale by CPU Percentage, you are able to scale up or down based on CPU percentage, by dragging the sliders based on your app’s needs. In our demo we will select our app to be scaled out up to 2 instances when CPU is more than 70% and when the CPU-load drops under 60% the web app will scale down to 1 instance
+                            <div class="feature-img">
+                                <img class="img-fluid" src="img/scaleout/scaleout5.JPG" alt="azure machine learning">
+                            </div>
+                        </p>
+                        <p>
+
+                        </p>
+
+                    </div>
+                    <div class="col-lg-12">
+                        <div class="quotes">
+                            <h6>Test Azure web app scaling</h6>
+                            In order to test Azure web app scaling you need a load testing tool like JMeter, that allows you to create a session with some http requests and play them back under load.
+                            Click on New Session, select HTTP method (GET) and set the url to hit:
+                            <ul class="col-lg-12" style="list-style-type: disc; padding-left: 30px">
+                                <li>azuretesting20200513115112.azurewebsites.net\api\values</li>
+                            </ul>
+                            <div class="feature-img">
+                                <img class="img-fluid" src="img/scaleout/scaleout4.JPG" alt="azure machine learning">
+                            </div>
+                            <p></p>
+                            <div class="feature-img">
+                                <img class="img-fluid" src="img/scaleout/scaleout6.JPG" alt="azure machine learning">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                @Html.Partial("~/views/home/forms.cshtml")
+            </div>
+            <div class="col-lg-4 sidebar-widgets">
+                <div class="widget-wrap">
+                    @Html.Partial("~/views/shared/_TopPosts.cshtml")
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
